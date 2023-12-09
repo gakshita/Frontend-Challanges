@@ -45,9 +45,7 @@ const GridLights = () => {
     }, [greenLights]);
 
     return (
-        <div
-            className={`grid gap-x-4 gap-y-4 grid-cols-${config[0].length} w-[320px]`}
-        >
+        <div className={`grid gap-x-4 gap-y-4 grid-cols-3 w-[320px]`}>
             {config.flat().map((val: number, i: number) => {
                 return (
                     <MemoizedGridLight
